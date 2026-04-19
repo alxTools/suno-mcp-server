@@ -1,0 +1,41 @@
+{
+  "name": "@alxtools/suno-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Suno AI music generation API - create, extend, and manage AI-generated music via natural language",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "suno-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "suno",
+    "ai",
+    "music",
+    "audio",
+    "generation",
+    "model-context-protocol"
+  ],
+  "author": "alxTools",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alxTools/suno-mcp-server.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "axios": "^1.7.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.0.0"
+  }
+}
